@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizz Football</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Quizz : Football</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="home-page.html">Accueil</a></li>
+    <li><a href="parcours.html">Parcours</a></li>
+    <li><a href="competences.html">Compétences</a></li>
+    <li><a href="experiences.html">Expériences</a></li>
+    <li><a href="evenements.html">Événements</a></li>
+    <li><a href="matieres.html">Matières</a></li>
+    <li><a href="passions.html">Passions</a></li>
+    <li><a href="quiz.html">Quizz</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="temoignage.html">Témoignage</a></li>
+  </ul>
+</nav>
+
+<main>
+  <form id="quizForm">
+
+    <p>1. Combien de joueurs par équipe sur le terrain ?</p>
+    <input type="radio" name="q1" value="1"> 11<br>
+    <input type="radio" name="q1" value="0"> 10<br>
+
+    <p>2. Quelle compétition est organisée tous les 4 ans pour les sélections nationales ?</p>
+    <input type="radio" name="q2" value="1"> Coupe du Monde<br>
+    <input type="radio" name="q2" value="0"> Ligue des Champions<br>
+
+    <p>3. Quelle est la durée d’un match standard ?</p>
+    <input type="radio" name="q3" value="1"> 90 minutes<br>
+    <input type="radio" name="q3" value="0"> 120 minutes<br>
+
+    <p>4. Le joueur Lionel Messi est originaire de quel pays ?</p>
+    <input type="radio" name="q4" value="1"> Argentine<br>
+    <input type="radio" name="q4" value="0"> Brésil<br>
+
+    <p>5. Comment s’appelle le championnat anglais ?</p>
+    <input type="radio" name="q5" value="1"> Premier League<br>
+    <input type="radio" name="q5" value="0"> Serie A<br>
+
+    <p>6. Combien de points pour une victoire en championnat ?</p>
+    <input type="radio" name="q6" value="1"> 3 points<br>
+    <input type="radio" name="q6" value="0"> 2 points<br>
+
+    <p>7. Quelle équipe a remporté la Coupe du Monde 2018 ?</p>
+    <input type="radio" name="q7" value="1"> France<br>
+    <input type="radio" name="q7" value="0"> Croatie<br>
+
+    <p>8. Le joueur Cristiano Ronaldo a joué pour :</p>
+    <input type="radio" name="q8" value="1"> Manchester United<br>
+    <input type="radio" name="q8" value="0"> Real Madrid seulement<br>
+
+    <p>9. Qu’est-ce qu’un penalty ?</p>
+    <input type="radio" name="q9" value="1"> Un tir depuis le point de penalty<br>
+    <input type="radio" name="q9" value="0"> Une faute sur le gardien<br>
+
+    <p>10. Quelle couleur de carton reçoit un joueur pour avertissement ?</p>
+    <input type="radio" name="q10" value="1"> Jaune<br>
+    <input type="radio" name="q10" value="0"> Rouge<br>
+
+    <p>11. Comment s’appelle le tournoi européen des clubs ?</p>
+    <input type="radio" name="q11" value="1"> Ligue des Champions<br>
+    <input type="radio" name="q11" value="0"> Coupe d’Europe<br>
+
+    <p>12. Quel joueur est surnommé “CR7” ?</p>
+    <input type="radio" name="q12" value="1"> Cristiano Ronaldo<br>
+    <input type="radio" name="q12" value="0"> Kylian Mbappé<br>
+
+    <p>13. Quelle équipe a remporté le plus de titres en Ligue des Champions ?</p>
+    <input type="radio" name="q13" value="1"> Real Madrid<br>
+    <input type="radio" name="q13" value="0"> FC Barcelone<br>
+
+    <p>14. Combien de remplacements sont autorisés en Ligue 1 ?</p>
+    <input type="radio" name="q14" value="1"> 5<br>
+    <input type="radio" name="q14" value="0"> 3<br>
+
+    <p>15. Quelle est la position du gardien dans une équipe ?</p>
+    <input type="radio" name="q15" value="1"> Gardien de but<br>
+    <input type="radio" name="q15" value="0"> Défenseur<br>
+
+    <br>
+    <button type="button" onclick="corrigerQuiz()">Valider</button>
+  </form>
+
+  <div id="resultat"></div>
+</main>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
